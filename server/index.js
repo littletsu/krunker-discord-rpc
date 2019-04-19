@@ -26,7 +26,7 @@ wss.on('connection', function connection(ws) {
       });
     }
   });
-  ws.on('close', () => client.disconnect());
+  ws.on('close', () => process.exit());
 
 });
 
