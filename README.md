@@ -5,4 +5,4 @@ Show your discord friends how are you doing in your krunker match!
 To install this, you will need to install "ViolentMonkey" first in google chrome (I haven't tester other browsers yet)
 **PLEASE ONLY USE VIOLENTMONKEY, I TRIED USING TAMPERMONKEY AND IT DIDN'T WORK.**
 
-You will also need to run the node program inside the "server" folder. And add the userscript located inside the "script" folder. Thanks :)
+You will also need to run the node program inside the "server" folder. And add the userscript located inside the "scripts" folder. Thanks :)
