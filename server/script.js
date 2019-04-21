@@ -5,6 +5,7 @@ var ws = new WebSocket("ws://localhost:1234");
 
 setInterval(() => {
     var ServerID = window.location.search.split('=')[1];
+    var ClassName = document.getElementById("menuClassName").innerHTML;
 
     fetch("https://matchmaker.krunker.io/game-info?game=" + ServerID).then(res => res.json()).then(json => {
         var match = (json.data.custom ? "In a custom match" : "In a public match")
@@ -21,7 +22,8 @@ setInterval(() => {
             username,
             id,
             maxP: json.maxClients,
-            P: json.clients
+            P: json.clients,
+            ClassName
         }))
     }).catch(err => console.warn("Unexcepted error! " + err))
 }, 3000)
